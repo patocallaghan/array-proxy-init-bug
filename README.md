@@ -1,56 +1,10 @@
 # array-proxy-init-bug
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Reproduction of [ISSUE TO COME] using the latest ember-source beta. Failing test is in the [tests/unit/utils/array-proxy-test.js](https://github.com/patocallaghan/array-proxy-init-bug/blob/master/tests/unit/utils/array-proxy-test.js)
 
-## Prerequisites
+Online ember-twiddle using 2.18.2 [here](https://ember-twiddle.com/b789f346f021c0ce484deb838d9f3a38?fileTreeShown=false&openFiles=tests.unit.controllers.my-random-test.js%2C)
 
-You will need the following things properly installed on your computer.
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
-* [Ember CLI](https://ember-cli.com/)
-* [Google Chrome](https://google.com/chrome/)
-
-## Installation
-
-* `git clone <repository-url>` this repository
-* `cd array-proxy-init-bug`
-* `npm install`
-
-## Running / Development
-
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Linting
-
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+Steps
+* `yarn`
+* `ember test --filter='ArrayProxy'`
